@@ -1,12 +1,4 @@
 <?php
-/*
-* Developer: Hugh Caluscusin - a.k.a Melodic Crypter
-* App: InstaFlick
-* About: InstaFlick is a simple app that fetches images from Instagram and Flickr through APIs
-* URL: http://www.melodiccrypter.com/apps/instaflick/
-* Year: 2017
-* Version 1
-* */
 
 class InstaFlick
 {
