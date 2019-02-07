@@ -1,27 +1,18 @@
 <?php
-/*
-* Developer: Hugh Caluscusin - a.k.a Melodic Crypter
-* App: InstaFlick
-* About: InstaFlick is a simple app that fetches images from Instagram and Flickr through APIs
-* URL: http://www.melodiccrypter.com/apps/instaflick/
-* Year: 2017
-* Version 1
-* */
+// InstaFlick
+require 'instaflick.php';
 
-    // Calling our app
-    require 'instaflick.php';
+// Passing the query to InstaFlick
+InstaFlick::search($_GET['q']);
 
-    // Passing the query to InstaFalick
-    InstaFlick::search($_GET['q']);
+// Instance of InstaFlick
+$app = new InstaFlick();
 
-    // Instance of InstaFlick
-    $app = new InstaFlick();
-
-    // Calling InstaFlick methods
-    $instaGeoAPI = $app->instaGeoAPI();
-    $instaTagAPI = $app->instaTagAPI();
-    $instaUserAPI = $app->instaUserAPI();
-    $flickrPhotoAPI = $app->flickrPhotoAPI();
+// Calling InstaFlick methods
+$instaGeoAPI = $app->instaGeoAPI();
+$instaTagAPI = $app->instaTagAPI();
+$instaUserAPI = $app->instaUserAPI();
+$flickrPhotoAPI = $app->flickrPhotoAPI();
 ?>
 
 <!DOCTYPE html>
